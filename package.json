@@ -1,19 +1,21 @@
 {
-  "name": "landingpage-gulp-project",
+  "name": "optimizedhtml",
   "version": "1.0.0",
-  "description": "My First Landing with gulp",
+  "description": "OptimizedHTML - Start HTML Template for Landing Page",
   "author": "Kirill Vorobyov",
   "devDependencies": {
-    "gulp": "^3.9.1",
     "browser-sync": "^2.13.0",
     "del": "^2.2.0",
+    "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-cache": "^0.4.5",
+    "gulp-clean-css": "^2.0.12",
     "gulp-concat": "^2.6.0",
-    "gulp-cssnano": "^2.1.2",
+    "gulp-csscomb": "^3.0.7",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
-    "gulp-uglifyjs": "^0.6.2",
+    "gulp-uglify": "^2.0.0",
     "node-bourbon": "^4.2.8"
-  }
+  },
+  "analyze": true
 }
