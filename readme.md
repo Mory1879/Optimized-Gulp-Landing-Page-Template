@@ -19,8 +19,7 @@
 
 <ul>
 	<li><strong>gulp</strong>: run default gulp task (sass, js, watch, browserSync) for web development;</li>
-	<li><strong>build</strong>: build project to <strong>dist</strong></li>
-	<li><strong>clearcache</strong>: clear all gulp cache.</li>
+	<li><strong>build</strong>: build project to <strong>build.</li>
 </ul>
 
 <h2>Rules for working with the starting HTML template</h2>
