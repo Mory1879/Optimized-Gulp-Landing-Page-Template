@@ -32,10 +32,14 @@ gulp.task('sass', function() { // Создаем таск Sass
 	.pipe(sass({
 		includePaths: require('node-bourbon').includePaths
 	}).on('error', sass.logError)) // Преобразуем Sass и Bourbon в CSS посредством gulp-sass
-		.pipe(rename({suffix: '.min', prefix : ''})) // Добавляем к файлу суфикс .min
 		.pipe(autoprefixer(['last 15 versions'])) // добавляем вендорные префиксы
 		.pipe(csscomb()) // Сортировка css свойств
 		.pipe(cleanCSS()) // Минимифицируем CSS
+		.pipe(rename({
+			basename: 'main',
+			suffix: '.min',
+			extname: '.css'
+			})) // Добавляем к файлу суфикс .min
 		.pipe(gulp.dest('src/css')) // Выгружаем результата в папку src/css
 		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 	});
