@@ -1,11 +1,17 @@
 $(function() {
 
-	$(".owl-carousel").owlCarousel({
-		items: 1,
-		loop: true,
-		margin: 0,
-		nav: false,
-		// navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"]
+	// Обьявляем вызов Мобильного меню
+	// Документация: http://mmenu.frebsite.nl/  https://github.com/FrDH/jQuery.mmenu
+
+	$("#mobile_menu").mmenu({
+		offCanvas	: {
+			position : "bottom"
+		},
+		navbar: false,
+		navbars: {
+			content: ["close"],
+			height: 1
+		},
 	});
 
 
